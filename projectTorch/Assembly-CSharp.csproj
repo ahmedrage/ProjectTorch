@@ -135,6 +135,7 @@
      <Compile Include="Assets\Scripts\jarodScripts\menu\shutdown.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\menu\startGame.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\respawn.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
