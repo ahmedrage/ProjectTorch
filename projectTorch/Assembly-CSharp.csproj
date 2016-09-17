@@ -45,18 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-     <Compile Include="Assets\Scripts\jarodScripts\elevatorProgressBar.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\menu\mainMenu.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\menu\pauseMenu.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\menu\shutdown.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\menu\startGame.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
-     <Compile Include="Assets\cameraFollow.cs" />
-     <Compile Include="Assets\playerMovement.cs" />
-=======
      <Compile Include="Assets\AdvancedPolygonCollider\Script\AdvancedPolygonCollider.cs" />
      <Compile Include="Assets\AdvancedPolygonCollider\Script\AdvancedPolygonColliderUtilities.cs" />
      <Compile Include="Assets\AstarPathfindingProject\Core\AI\AILerp.cs" />
@@ -141,6 +129,14 @@
      <Compile Include="Assets\Scripts\AhmedScripts\cameraFollow.cs" />
      <Compile Include="Assets\Scripts\AhmedScripts\enemyBeaviour.cs" />
      <Compile Include="Assets\Scripts\AhmedScripts\playerMovement.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\elevatorProgressBar.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\mainMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\pauseMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\shutdown.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\startGame.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
      <None Include="Assets\AdvancedPolygonCollider\Readme.txt" />
@@ -155,18 +151,17 @@
      <None Include="Assets\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\NavmeshOutline.shader" />
      <None Include="Assets\AstarPathfindingProject\link.xml" />
->>>>>>> feature/Enemies
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="Pathfinding.JsonFx">
- <HintPath>C:/Users/Ahmed/Documents/ProjectTorch/projectTorch/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
- </Reference>
  <Reference Include="Pathfinding.Ionic.Zip.Reduced">
- <HintPath>C:/Users/Ahmed/Documents/ProjectTorch/projectTorch/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ <HintPath>C:/Users/townej/Documents/SourceTree/ProjectTorch/projectTorch/Assets/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="Pathfinding.JsonFx">
+ <HintPath>C:/Users/townej/Documents/SourceTree/ProjectTorch/projectTorch/Assets/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
