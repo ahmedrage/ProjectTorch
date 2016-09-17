@@ -46,11 +46,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\jarodScripts\elevatorProgressBar.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\exitMenus.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\mainMenu.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\pauseMenu.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\shutdown.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\torchDecrease.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\mainMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\pauseMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\shutdown.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\startGame.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
