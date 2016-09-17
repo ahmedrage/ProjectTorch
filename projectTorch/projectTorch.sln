@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{614DCF33-6076-9F44-496B-2464610D8DF1}") = "projectTorch", "Assembly-CSharp.csproj", "{7173C6C5-318E-25A1-8E91-6948DD4FF755}"
 EndProject
+Project("{614DCF33-6076-9F44-496B-2464610D8DF1}") = "projectTorch", "Assembly-CSharp-Editor.csproj", "{06594D5C-9245-41B8-9176-D60C9F4ECB56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{7173C6C5-318E-25A1-8E91-6948DD4FF755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7173C6C5-318E-25A1-8E91-6948DD4FF755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7173C6C5-318E-25A1-8E91-6948DD4FF755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06594D5C-9245-41B8-9176-D60C9F4ECB56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06594D5C-9245-41B8-9176-D60C9F4ECB56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06594D5C-9245-41B8-9176-D60C9F4ECB56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06594D5C-9245-41B8-9176-D60C9F4ECB56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
