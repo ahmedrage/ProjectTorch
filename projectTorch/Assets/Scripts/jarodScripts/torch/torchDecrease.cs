@@ -16,4 +16,14 @@ public class torchDecrease : MonoBehaviour {
 	void Update () {
         lamp.intensity -= lampMax / lifeTime * Time.deltaTime;
     }
+
+    public void dealDamage(float damage)
+    {
+        lamp.intensity -= damage;
+    }
+    
+    public void killPlayer()
+    {
+        //
+    }
 }
