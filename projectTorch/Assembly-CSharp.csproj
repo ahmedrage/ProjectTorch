@@ -48,8 +48,9 @@
      <Compile Include="Assets\Scripts\jarodScripts\elevatorProgressBar.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\menu\mainMenu.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\menu\pauseMenu.cs" />
-     <Compile Include="Assets\Scripts\jarodScripts\menu\shutDown.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\menu\shutdown.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\menu\startGame.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
  <Reference Include="UnityEngine.UI">
