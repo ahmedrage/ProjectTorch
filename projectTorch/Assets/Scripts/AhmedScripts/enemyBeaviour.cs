@@ -7,13 +7,15 @@ public class enemyBeaviour : MonoBehaviour {
 	public Transform player;
 	public float rotationOffset;
 	public enum state
-
 	{
 		idle,
 		persuing
 	}
 	public state enemyState;
 	public AILerp followScript;
+	public float hitDelay;
+	float timeToHit;
+	bool canHit;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -28,6 +30,7 @@ public class enemyBeaviour : MonoBehaviour {
 			break;
 		case state.idle:
 			followScript.canMove = false;
+			canHit = false;
 			break;
 		default:
 			break;
@@ -36,6 +39,7 @@ public class enemyBeaviour : MonoBehaviour {
 
 	void Persue () {
 		followScript.canMove = true;
+		canHit = true;
 	}
 
 	void OnTriggerEnter2D (Collider2D other) {
@@ -47,6 +51,13 @@ public class enemyBeaviour : MonoBehaviour {
 	void OnTriggerExit2D (Collider2D other) {
 		if (other.gameObject.tag == "Player") {
 			enemyState = state.idle;
+		}
+	}
+
+	void OnCollisionStay2D (Collision2D coll) {
+		if (coll.gameObject.tag == "Player" && Time.time > timeToHit) {
+			print ("Subtract Damage");
+			timeToHit = Time.time + hitDelay;
 		}
 	}
 }
