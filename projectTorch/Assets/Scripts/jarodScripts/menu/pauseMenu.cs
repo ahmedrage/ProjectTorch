@@ -18,14 +18,16 @@ public class pauseMenu : MonoBehaviour {
         }
 	}
 
-    private void toggleActive(GameObject obj)
+    public void toggleActive(GameObject obj)
     {
         if (!obj.activeSelf)
         {
             obj.SetActive(true);
+            Time.timeScale = 0;
         } else
         {
             obj.SetActive(false);
+            Time.timeScale = 1;
         }
     }
 }

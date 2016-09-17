@@ -7,12 +7,26 @@ public class torchFlicker : MonoBehaviour {
     
     // Use this for initialization
 	void Start () {
-	
+        StartCoroutine(flickerLight());
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        lantern.intensity -= 0.5f / 1.0f * Time.deltaTime;
-        lantern.intensity += 0.5f / 1.0f * Time.deltaTime;
+        
+    }
+
+    IEnumerator flickerLight()
+    {
+        if (lantern.intensity > 0.0f)
+        {
+            lantern.intensity += Random.Range(0.0f, 0.2f);
+            yield return new WaitForSeconds(0.2f);
+            lantern.intensity -= Random.Range(0.0f, 0.2f);
+            yield return new WaitForSeconds(0.2f);
+            StartCoroutine(flickerLight());
+        } else
+        {
+            lantern.intensity = 0.0f;
+        }
     }
 }
