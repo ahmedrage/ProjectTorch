@@ -46,6 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\jarodScripts\elevatorProgressBar.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\exitMenus.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\mainMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\pauseMenu.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\shutdown.cs" />
+     <Compile Include="Assets\Scripts\jarodScripts\torchDecrease.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
