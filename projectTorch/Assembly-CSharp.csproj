@@ -53,6 +53,8 @@
      <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
+     <Compile Include="Assets\cameraFollow.cs" />
+     <Compile Include="Assets\playerMovement.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
