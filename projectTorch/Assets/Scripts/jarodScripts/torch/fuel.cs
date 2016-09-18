@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class batteries : MonoBehaviour {
+public class fuel : MonoBehaviour {
 
     public float fuelValue;
     public Light lantern;
@@ -16,11 +16,12 @@ public class batteries : MonoBehaviour {
 	
 	}
 
-    void OnTriggerStay(Collider coll) {
+    void OnTriggerEnter2D(Collider2D coll) {
         if (coll.gameObject.tag == "Player")
         {
             //Run code to pick up battery here
             lantern.intensity += fuelValue;
+			Destroy (gameObject);
         }
     }
 }
