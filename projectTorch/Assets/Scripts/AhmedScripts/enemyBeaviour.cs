@@ -6,6 +6,7 @@ public class enemyBeaviour : MonoBehaviour {
 	public float speed;
 	public Transform player;
 	public float rotationOffset;
+    public torchDecrease decreaseTorchClass;
 	public enum state
 	{
 		idle,
@@ -22,6 +23,7 @@ public class enemyBeaviour : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		followScript = GetComponent<AILerp> ();
 		initialSpeed = GetComponent<AILerp>().speed;
+        decreaseTorchClass = GameObject.FindGameObjectWithTag("Lantern").GetComponent<torchDecrease>();
 	}
 	
 	// Update is called once per frame
@@ -58,7 +60,8 @@ public class enemyBeaviour : MonoBehaviour {
 
 	void OnCollisionStay2D (Collision2D coll) {
 		if (coll.gameObject.tag == "Player" && Time.time > timeToHit && canHit == true) {
-			print ("Subtract Damage");
+            decreaseTorchClass.dealDamage(2);
+            print("Damage");
 			timeToHit = Time.time + hitDelay;
 		}
 	}
