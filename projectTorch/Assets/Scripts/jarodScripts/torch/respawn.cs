@@ -19,5 +19,6 @@ public class respawn : MonoBehaviour {
     public void respawnPlayer()
     {
         SceneManager.LoadScene(scene);
+        Time.timeScale = 1;
     }
 }

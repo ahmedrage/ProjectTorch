@@ -26,5 +26,6 @@ public class torchDecrease : MonoBehaviour {
     public void killPlayer()
     {
         respawnMenu.SetActive(true);
+        Time.timeScale = 0;
     }
 }
