@@ -21,6 +21,7 @@ public class generator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (progressBar != null && progressBar.fillAmount >= 1) {
+            transform.FindChild("Canvas").FindChild("Background").gameObject.SetActive(false);
 			Destroy (progressBar.gameObject);
 			prompt.SetActive (false);
 			canInteract = false;
