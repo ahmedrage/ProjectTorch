@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 6add48d48a199b04d8025eff093625fe
-timeCreated: 1474179317
+timeCreated: 1474182046
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Buttons complete_0
+    21300002: Buttons complete_1
+    21300004: Buttons complete_2
+    21300006: Buttons complete_3
+    21300008: Buttons complete_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,8 +34,8 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
@@ -38,7 +43,7 @@ TextureImporter:
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -49,7 +54,82 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Buttons complete_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 44
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 20}
+        - {x: -50, y: -20}
+        - {x: 50, y: -20}
+        - {x: 50, y: 20}
+    - name: Buttons complete_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 44
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 20}
+        - {x: -50, y: -20}
+        - {x: 50, y: -20}
+        - {x: 50, y: 20}
+    - name: Buttons complete_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 44
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 20}
+        - {x: -50, y: -20}
+        - {x: 50, y: -20}
+        - {x: 50, y: 20}
+    - name: Buttons complete_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 44
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 20}
+        - {x: -50, y: -20}
+        - {x: 50, y: -20}
+        - {x: 50, y: 20}
+    - name: Buttons complete_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 44
+        width: 100
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 20}
+        - {x: -50, y: -20}
+        - {x: 50, y: -20}
+        - {x: 50, y: 20}
     outline: []
   spritePackingTag: 
   userData: 

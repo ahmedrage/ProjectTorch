@@ -5,7 +5,7 @@ public class fuel : MonoBehaviour {
 
     public float fuelValue;
     public Light lantern;
-
+	public AudioSource pickUpSound;
 	// Use this for initialization
 	void Start () {
 	
@@ -20,8 +20,9 @@ public class fuel : MonoBehaviour {
         if (coll.gameObject.tag == "Player")
         {
             //Run code to pick up battery here
+			pickUpSound.Play();
             lantern.intensity += fuelValue;
-			Destroy (gameObject);
+			Destroy (gameObject, 0.1f);
         }
     }
 }

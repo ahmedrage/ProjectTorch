@@ -10,6 +10,7 @@ public class generator : MonoBehaviour {
 	bool canInteract;
 	public stats statScript;
 	public int index;
+	public AudioSource startSound;
 	// Use this for initialization
 	void Start () {
 		progressBar = transform.FindChild ("Canvas").FindChild ("progressBar").GetComponent<Image>();
@@ -32,6 +33,7 @@ public class generator : MonoBehaviour {
 			AstarPath.active.Scan ();
 			triggered = true;
 			statScript.waveArray[index].Activate ();
+			startSound.Play ();
 		}
 		if (progressBar != null && canInteract == true && Input.GetKey (KeyCode.E)) {
 			progressBar.fillAmount += ammountIncrease * Time.deltaTime;
