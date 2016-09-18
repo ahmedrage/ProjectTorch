@@ -6,7 +6,7 @@ public class playerMovement : MonoBehaviour {
 	public Transform cursor;
 	public float rotationOffset;
 	public bool moving;
-	public Vector3 DELETE;
+	public AudioSource walkSound;
 	Animator anim;
 	Rigidbody2D rb;
 	float xInput;
@@ -22,9 +22,16 @@ public class playerMovement : MonoBehaviour {
 	void FixedUpdate () {
 		Move ();
 		UpdateVars ();
-		DELETE = rb.velocity;
 	}
 
+	void Update () {
+		if ((Input.GetAxis ("Horizontal") != 0 || Input.GetAxis ("Vertical") != 0) && !walkSound.isPlaying)  {
+			walkSound.UnPause ();
+			print ("TESSST");
+		} else {
+			walkSound.Pause ();
+		}
+	}
 	void UpdateVars () {
 		xInput = Input.GetAxis ("Horizontal");
 		yInput = Input.GetAxis ("Vertical");

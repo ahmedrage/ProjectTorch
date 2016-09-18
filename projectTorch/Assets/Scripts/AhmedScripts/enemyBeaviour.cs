@@ -7,6 +7,7 @@ public class enemyBeaviour : MonoBehaviour {
 	public Transform player;
 	public float rotationOffset;
     public torchDecrease decreaseTorchClass;
+	public AudioSource Attack;
 	public enum state
 	{
 		idle,
@@ -22,6 +23,7 @@ public class enemyBeaviour : MonoBehaviour {
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		followScript = GetComponent<AILerp> ();
+		followScript.target = player;
 		initialSpeed = GetComponent<AILerp>().speed;
         decreaseTorchClass = GameObject.FindGameObjectWithTag("Lantern").GetComponent<torchDecrease>();
 	}
@@ -61,8 +63,8 @@ public class enemyBeaviour : MonoBehaviour {
 	void OnCollisionStay2D (Collision2D coll) {
 		if (coll.gameObject.tag == "Player" && Time.time > timeToHit && canHit == true) {
             decreaseTorchClass.dealDamage(2);
-            print("Damage");
 			timeToHit = Time.time + hitDelay;
+			Attack.Play ();
 		}
 	}
 }

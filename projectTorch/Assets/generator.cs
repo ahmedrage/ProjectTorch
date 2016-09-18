@@ -9,6 +9,7 @@ public class generator : MonoBehaviour {
 	public float ammountIncrease;
 	bool canInteract;
 	public stats statScript;
+	public int index;
 	// Use this for initialization
 	void Start () {
 		progressBar = transform.FindChild ("Canvas").FindChild ("progressBar").GetComponent<Image>();
@@ -29,6 +30,8 @@ public class generator : MonoBehaviour {
 			transform.FindChild ("genLight").gameObject.SetActive (true);
 			gameObject.layer = 5;
 			AstarPath.active.Scan ();
+			triggered = true;
+			statScript.waveArray[index].Activate ();
 		}
 		if (progressBar != null && canInteract == true && Input.GetKey (KeyCode.E)) {
 			progressBar.fillAmount += ammountIncrease * Time.deltaTime;

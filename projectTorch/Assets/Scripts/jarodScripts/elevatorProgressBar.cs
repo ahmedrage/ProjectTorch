@@ -11,7 +11,7 @@ public class elevatorProgressBar : MonoBehaviour {
     public int sceneToLoad;
 	public stats statScript;
 	public GameObject prompt;
-
+	public int generatorsRequired;
 	// Use this for initialization
 	void Start () {
 		statScript = GameObject.Find ("GM").GetComponent<stats>();
@@ -25,7 +25,7 @@ public class elevatorProgressBar : MonoBehaviour {
     //
     void OnTriggerStay2D(Collider2D coll)
     {
-        if (coll.gameObject.tag == "Player" && statScript.generatorsEnabled >= 2)
+        if (coll.gameObject.tag == "Player" && statScript.generatorsEnabled >= 3)
         {
 			if (Input.GetKey(KeyCode.E))
             {
