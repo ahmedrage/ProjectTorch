@@ -14,12 +14,14 @@ public class enemyBeaviour : MonoBehaviour {
 	public state enemyState;
 	public AILerp followScript;
 	public float hitDelay;
+	public float initialSpeed;
 	float timeToHit;
 	bool canHit;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
 		followScript = GetComponent<AILerp> ();
+		initialSpeed = GetComponent<AILerp>().speed;
 	}
 	
 	// Update is called once per frame
@@ -55,7 +57,7 @@ public class enemyBeaviour : MonoBehaviour {
 	}
 
 	void OnCollisionStay2D (Collision2D coll) {
-		if (coll.gameObject.tag == "Player" && Time.time > timeToHit) {
+		if (coll.gameObject.tag == "Player" && Time.time > timeToHit && canHit == true) {
 			print ("Subtract Damage");
 			timeToHit = Time.time + hitDelay;
 		}

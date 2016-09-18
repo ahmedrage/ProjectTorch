@@ -137,6 +137,9 @@
      <Compile Include="Assets\Scripts\jarodScripts\torch\fuel.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchDecrease.cs" />
      <Compile Include="Assets\Scripts\jarodScripts\torch\torchFlicker.cs" />
+     <Compile Include="Assets\TorchRepell.cs" />
+     <Compile Include="Assets\generator.cs" />
+     <Compile Include="Assets\stats.cs" />
      <None Include="Assets\AstarPathfindingProject\Editor\EditorAssets\Materials\Navmesh.shader" />
      <None Include="Assets\AstarPathfindingProject\Plugins\DotNetZip\DotNetZipLicense.txt" />
      <None Include="Assets\AdvancedPolygonCollider\Readme.txt" />
