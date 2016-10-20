@@ -15,10 +15,12 @@ public class enemyBeaviour : MonoBehaviour {
 	}
 	public state enemyState;
 	public AILerp followScript;
+	float initialRadius; 
 	public float hitDelay;
 	public float initialSpeed;
 	float timeToHit;
 	bool canHit;
+
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag ("Player").transform;
@@ -26,6 +28,7 @@ public class enemyBeaviour : MonoBehaviour {
 		followScript.target = player;
 		initialSpeed = GetComponent<AILerp>().speed;
         decreaseTorchClass = GameObject.FindGameObjectWithTag("Lantern").GetComponent<torchDecrease>();
+		initialRadius = GetComponent<CircleCollider2D> ().radius;
 	}
 	
 	// Update is called once per frame
@@ -40,6 +43,12 @@ public class enemyBeaviour : MonoBehaviour {
 			break;
 		default:
 			break;
+		}
+
+		if (enemyState == state.persuing) {
+			GetComponent<CircleCollider2D> ().radius = initialRadius * 5/4;
+		} else {
+			GetComponent<CircleCollider2D> ().radius = initialRadius;
 		}
 	}
 
